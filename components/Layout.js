@@ -56,9 +56,9 @@ function Layout({ children }) {
         {/* <!-- Twitter Card data --> */}
         <meta name="twitter:title" content={profileData.meta.title} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@suvansh_rana_" />
+        <meta name="twitter:site" content="@suvnshr" />
         <meta name="twitter:description" content={profileData.about} />
-        <meta name="twitter:creator" content="@suvansh_rana_" />
+        <meta name="twitter:creator" content="@suvnshr" />
         <meta name="twitter:image" content={profileData.avatar} />
         <meta name="twitter:image:alt" content={profileData.about.name} />
 

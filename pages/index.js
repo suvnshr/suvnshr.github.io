@@ -11,7 +11,7 @@ import Head from "next/head";
 
 export async function getStaticProps() {
   const res = await fetch(
-    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@suvansh_rana"
+    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@suvnshr"
   );
 
   const blogsData = await res.json();

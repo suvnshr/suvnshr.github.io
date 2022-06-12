@@ -36,11 +36,11 @@ const profileData = {
     },
     {
       icon: <FaMedium size="28px" />,
-      link: "https://medium.com/@suvansh_rana",
+      link: "https://medium.com/@suvnshr",
     },
     {
       icon: <FaTwitter size="28px" />,
-      link: "https://twitter.com/@suvansh_rana_",
+      link: "https://twitter.com/@suvnshr",
     },
   ],
 };
