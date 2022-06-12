@@ -9,7 +9,7 @@ const profileData = {
 
   meta: {
     title: "Suvansh Rana's portfolio",
-    url: "https://suvansh-rana.github.io",
+    url: "https://suvnshr.github.io",
     tags: [
       "developer",
       "portfolio",
@@ -28,11 +28,11 @@ const profileData = {
   links: [
     {
       icon: <FaGithub size="28px" />,
-      link: "https://github.com/suvansh-rana",
+      link: "https://github.com/suvnshr",
     },
     {
       icon: <FaLinkedin size="28px" />,
-      link: "https://linkedin.com/in/suvansh-rana",
+      link: "https://linkedin.com/in/suvnshr",
     },
     {
       icon: <FaMedium size="28px" />,
