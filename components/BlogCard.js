@@ -11,6 +11,7 @@ import { Chip, Grid } from "@material-ui/core";
 import { htmlToText } from "html-to-text";
 import OuterLink from "./OuterLink";
 import Margin from "./Margin";
+import { OpenInNewOutlined } from "@material-ui/icons";
 
 const useStyles = makeStyles({
   root: {
@@ -23,7 +24,7 @@ const useStyles = makeStyles({
     backgroundColor: "#2b2b2b",
   },
   button: {
-    padding: 10,
+    padding: "8px 16px",
     letterSpacing: 0.45,
   },
   cardAction: {
@@ -100,7 +101,13 @@ export default function BlogCard({
         <Grid container justify="flex-end">
           <Grid item>
             <OuterLink link={link}>
-              <Button size="small" color="primary" className={classes.button}>
+              <Button
+                startIcon={<OpenInNewOutlined />}
+                variant="contained"
+                size="small"
+                color="primary"
+                className={classes.button}
+              >
                 Read
               </Button>
             </OuterLink>

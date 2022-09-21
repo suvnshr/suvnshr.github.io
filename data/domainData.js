@@ -1,10 +1,10 @@
-import { SiDjango } from "react-icons/si";
+import { SiDjango, SiNextDotJs } from "react-icons/si";
 import { DiJavascript1 } from "react-icons/di";
 import { RiFlutterFill } from "react-icons/ri";
 import { FiGlobe } from "react-icons/fi";
 import { ImMobile2 } from "react-icons/im";
 import { IoCodeSlash, IoLogoPython } from "react-icons/io5";
-import { FaReact } from "react-icons/fa";
+import { FaDocker, FaReact, FaTools } from "react-icons/fa";
 
 const domainData = [
   {
@@ -20,6 +20,11 @@ const domainData = [
         name: "React.js",
         SkillIcon: FaReact,
         about_link: "https://en.wikipedia.org/wiki/React_(JavaScript_library)",
+      },
+      {
+        name: "Next.js",
+        SkillIcon: SiNextDotJs,
+        about_link: "https://en.wikipedia.org/wiki/Next.js",
       },
     ],
   },
@@ -48,6 +53,17 @@ const domainData = [
         name: "Javascript",
         SkillIcon: DiJavascript1,
         about_link: "https://en.wikipedia.org/wiki/JavaScript",
+      },
+    ],
+  },
+  {
+    name: "Devops",
+    icon: <FaTools />,
+    skills: [
+      {
+        name: "Docker",
+        SkillIcon: FaDocker,
+        about_link: "https://en.wikipedia.org/wiki/Docker_(software)",
       },
     ],
   },

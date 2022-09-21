@@ -10,6 +10,7 @@ import Typography from "@material-ui/core/Typography";
 import { Chip, Grid } from "@material-ui/core";
 import OuterLink from "./OuterLink";
 import Margin from "./Margin";
+import { OpenInNewOutlined } from "@material-ui/icons";
 
 const useStyles = makeStyles({
   root: {
@@ -22,7 +23,7 @@ const useStyles = makeStyles({
     backgroundColor: "#2b2b2b",
   },
   button: {
-    padding: 10,
+    padding: "8px 16px",
     letterSpacing: 0.45,
   },
   cardAction: {
@@ -80,10 +81,11 @@ export default function ProjectCard({
         </Typography>
       </CardContent>
       <CardActions className={classes.cardAction}>
-        <Grid container justify="flex-end">
+        <Grid container justify="flex-end" spacing={2}>
           <Grid item>
             <OuterLink link={githubLink}>
               <Button
+                variant="outlined"
                 className={classes.button}
                 size="small"
                 color="primary"
@@ -98,7 +100,9 @@ export default function ProjectCard({
               <Button
                 size="small"
                 color="primary"
+                variant="contained"
                 className={classes.button}
+                startIcon={<OpenInNewOutlined />}
               >
                 Project
               </Button>
