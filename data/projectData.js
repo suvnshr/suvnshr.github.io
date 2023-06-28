@@ -25,7 +25,7 @@ const projectData = [
       "A futuristic app which calculates your carbon footprint due to Travel, Food and Household activities. Gives you tips to reduce your carbon footprints.",
     coverImage:
       "https://raw.githubusercontent.com/suvnshr/C1O2/master/assets/images/C1O2_icon.png",
-    tags: ["carbon-footprint-calculator", "flutter"],
+    tags: ["carbon-footprint-calculator", "flutter", "mobile"],
     projectLink: "https://github.com/suvnshr/C1O2/releases/latest",
     githubLink: "https://github.com/suvnshr/C1O2",
   },
@@ -57,7 +57,7 @@ const projectData = [
       "An app which shows quotes on topics like wisdom, life and technology stars",
     coverImage:
       "https://raw.githubusercontent.com/suvnshr/wisdom_quotes/master/assets/app_icon.png",
-    tags: ["flutter", "quotes"],
+    tags: ["flutter", "quotes", "mobile"],
     projectLink:
       "https://github.com/suvnshr/wisdom_quotes/releases/latest",
     githubLink: "https://github.com/suvnshr/wisdom_quotes",
