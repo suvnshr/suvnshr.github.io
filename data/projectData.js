@@ -1,5 +1,15 @@
 const projectData = [
   {
+    name: "Py Manager",
+    description:
+      "A simple GUI based package manager for python",
+    coverImage:
+      "https://raw.githubusercontent.com/suvnshr/py-manager/main/assets/icon.png",
+    projectLink: "https://github.com/suvnshr/py-manager/releases/tag/v0.1.0-alpha.1",
+    githubLink: "https://github.com/suvnshr/py-manager",
+    tags: ["package-manager", "electron-js", "desktop"],
+  },
+  {
     name: "DevXplore",
     description:
       "A search engine for developers for finding Github repos, youtube tutorials, online courses, and documentation faster.",
