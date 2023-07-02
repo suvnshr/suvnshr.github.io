@@ -19,20 +19,7 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head>
-          <script
-            data-name="BMC-Widget"
-            data-cfasync="false"
-            src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-            data-id="suvnshr"
-            data-description="Support me on Buy me a coffee!"
-            data-message="Thank you developer! Wanna buy me a chai?"
-            data-color="#f9a825"
-            data-position="Right"
-            data-x_margin="18"
-            data-y_margin="18"
-          ></script>
-        </Head>
+        <Head></Head>
         <body>
           <Main />
           <NextScript />
