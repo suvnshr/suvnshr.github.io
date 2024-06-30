@@ -40,28 +40,6 @@ const projectData = [
     projectLink: "https://pucho-kisan.herokuapp.com",
     githubLink: "https://github.com/aayushbisen/pucho-kisan",
   },
-  {
-    name: "Good Quotes",
-    description:
-      "An action for google assistant that brings you the quotes of famous and successful personalities in Hindi and English.",
-    coverImage:
-      "https://raw.githubusercontent.com/suvnshr/good-quotes/master/images/good-quotes.jpg",
-    tags: ["google-assistant-action", "quotes", "node.js"],
-    githubLink: "https://github.com/suvnshr/good-quotes",
-    projectLink: "https://assistant.google.com/services/a/uid/000000289a269df7",
-  },
-
-  {
-    name: "Wisdom Quotes",
-    description:
-      "An app which shows quotes on topics like wisdom, life and technology stars",
-    coverImage:
-      "https://raw.githubusercontent.com/suvnshr/wisdom_quotes/master/assets/app_icon.png",
-    tags: ["flutter", "quotes", "mobile"],
-    projectLink:
-      "https://github.com/suvnshr/wisdom_quotes/releases/latest",
-    githubLink: "https://github.com/suvnshr/wisdom_quotes",
-  },
 ];
 
 export default projectData;
