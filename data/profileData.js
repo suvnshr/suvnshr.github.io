@@ -38,10 +38,10 @@ const profileData = {
       icon: <FaMedium size="28px" />,
       link: "https://medium.com/@suvnshr",
     },
-    {
-      icon: <FaTwitter size="28px" />,
-      link: "https://twitter.com/@suvnshr",
-    },
+    // {
+    //   icon: <FaTwitter size="28px" />,
+    //   link: "https://twitter.com/@suvnshr",
+    // },
   ],
 };
 
