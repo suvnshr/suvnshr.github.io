@@ -22,7 +22,7 @@ img {
   border-radius: 20px !important;
 }
 
-/* $scroller-color: "f9a825" */
+/* $scroller-color: "a2de4c" */
 /* $scrollbar-background: "424242" */
 
 body::-webkit-scrollbar {
@@ -31,13 +31,13 @@ body::-webkit-scrollbar {
 
 body {
   scrollbar-width: thick;
-  scrollbar-color: #f9a825 #424242;
+  scrollbar-color: #a2de4c #424242;
 }
 body::-webkit-scrollbar-track {
   background: #424242;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #f9a825;
+  background-color: #a2de4c;
   border-radius: 20px;
   border: 2px solid #424242;
 

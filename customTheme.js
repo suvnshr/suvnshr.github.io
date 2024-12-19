@@ -1,4 +1,4 @@
-import { grey, yellow } from "@material-ui/core/colors";
+import { grey, lime } from "@material-ui/core/colors";
 import { createMuiTheme, responsiveFontSizes } from "@material-ui/core/styles";
 
 let customTheme = createMuiTheme({
@@ -8,7 +8,7 @@ let customTheme = createMuiTheme({
   palette: {
     type: "dark",
     primary: {
-      main: yellow[800],
+      main: lime[500],
     },
     secondary: {
       main: grey[800],

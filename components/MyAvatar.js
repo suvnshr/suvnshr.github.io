@@ -5,6 +5,7 @@ const useStyles = makeStyles((theme) => ({
   photo: {
     height: 200,
     width: 200,
+    objectFit: "cover",
     [theme.breakpoints.down("sm")]: {
       height: 180,
       width: 180,

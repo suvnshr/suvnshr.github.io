@@ -2,8 +2,8 @@ import { FaGithub, FaLinkedin, FaMedium, FaTwitter } from "react-icons/fa";
 
 const profileData = {
   name: "Suvansh Rana",
-  avatar: "./avatar.jpg",
-  backgroundImage: "./background-blurred.webp",
+  avatar: "./avatar-v2.jpg",
+  backgroundImage: "./background-blurred-v2.jpg",
   about:
     "A web developer and a computer science undergraduate. A person who loves creating stuff and listening to music. Looking forward to work with passionate developers",
 
