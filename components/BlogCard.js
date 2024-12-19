@@ -12,6 +12,7 @@ import { htmlToText } from "html-to-text";
 import OuterLink from "./OuterLink";
 import Margin from "./Margin";
 import { OpenInNewOutlined } from "@material-ui/icons";
+import { extractImagePaths } from "../utils/extractImagePaths";
 
 const useStyles = makeStyles({
   root: {
@@ -57,12 +58,14 @@ export default function BlogCard({
     });
   }, []);
 
+  const imagePaths = extractImagePaths(description)
+
   return (
     <Card className={classes.root}>
       <CardMedia
         component="img"
         height="140"
-        image={thumbnail}
+        image={thumbnail || imagePaths?.[0]}
         className={classes.media}
         alt={title}
         title={title}
