@@ -1,11 +1,11 @@
 const projectData = [
   {
     name: "Py Manager",
-    description:
-      "A simple GUI based package manager for python",
+    description: "A simple GUI based package manager for python",
     coverImage:
       "https://raw.githubusercontent.com/suvnshr/py-manager/main/assets/icon.png",
-    projectLink: "https://github.com/suvnshr/py-manager/releases/tag/v0.1.0-alpha.1",
+    projectLink:
+      "https://github.com/suvnshr/py-manager/releases/tag/v0.1.0-alpha.1",
     githubLink: "https://github.com/suvnshr/py-manager",
     tags: ["package-manager", "electron-js", "desktop"],
   },
@@ -15,7 +15,7 @@ const projectData = [
       "A search engine for developers for finding Github repos, youtube tutorials, online courses, and documentation faster.",
     coverImage:
       "https://raw.githubusercontent.com/suvnshr/developer-search/dev/static/short-logo.png",
-    projectLink: "https://devxplore.onrender.com",
+    projectLink: "https://devxplore-v2.onrender.com",
     githubLink: "https://github.com/suvnshr/developer-search",
     tags: ["search-engine", "django", "materialize-css"],
   },
@@ -37,7 +37,6 @@ const projectData = [
     coverImage:
       "https://raw.githubusercontent.com/aayushbisen/pucho-kisan/master/forum/static/forum/images/icons/icon-144x144.png",
     tags: ["forum", "django", "materialize-css"],
-    projectLink: "https://pucho-kisan.herokuapp.com",
     githubLink: "https://github.com/aayushbisen/pucho-kisan",
   },
 ];

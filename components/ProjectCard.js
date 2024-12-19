@@ -85,7 +85,7 @@ export default function ProjectCard({
           <Grid item>
             <OuterLink link={githubLink}>
               <Button
-                variant="outlined"
+                variant={!projectLink ? "contained" : "outlined"}
                 className={classes.button}
                 size="small"
                 color="primary"
@@ -95,19 +95,21 @@ export default function ProjectCard({
             </OuterLink>
           </Grid>
 
-          <Grid item>
-            <OuterLink link={projectLink}>
-              <Button
-                size="small"
-                color="primary"
-                variant="contained"
-                className={classes.button}
-                startIcon={<OpenInNewOutlined />}
-              >
-                Project
-              </Button>
-            </OuterLink>
-          </Grid>
+          {projectLink && (
+            <Grid item>
+              <OuterLink link={projectLink}>
+                <Button
+                  size="small"
+                  color="primary"
+                  variant="contained"
+                  className={classes.button}
+                  startIcon={<OpenInNewOutlined />}
+                >
+                  Project
+                </Button>
+              </OuterLink>
+            </Grid>
+          )}
         </Grid>
       </CardActions>
     </Card>
