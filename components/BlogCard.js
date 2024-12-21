@@ -58,7 +58,7 @@ export default function BlogCard({
     });
   }, []);
 
-  const imagePaths = extractImagePaths(description)
+  const imagePaths = extractImagePaths(description);
 
   return (
     <Card className={classes.root}>

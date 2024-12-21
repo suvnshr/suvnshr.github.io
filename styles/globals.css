@@ -1,8 +1,9 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   user-select: none;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -21,9 +22,6 @@ img {
 .MuiButton-root {
   border-radius: 20px !important;
 }
-
-/* $scroller-color: "a2de4c" */
-/* $scrollbar-background: "424242" */
 
 body::-webkit-scrollbar {
   width: 15px;

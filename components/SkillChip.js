@@ -4,8 +4,8 @@ import customTheme from "../customTheme";
 import OuterLink from "./OuterLink";
 
 const useStyles = makeStyles({
-  skillIcon: { height: 18, width: 18, },
-  skillChip: { margin: "4px 3px", },
+  skillIcon: { height: 18, width: 18 },
+  skillChip: { margin: "4px 3px" },
 });
 
 function SkillChip({ name, SkillIcon, about_link }) {

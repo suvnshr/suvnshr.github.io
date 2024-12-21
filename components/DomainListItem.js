@@ -39,7 +39,7 @@ export default function DomainListItem({ name, icon, skills }) {
         <ListItemText
           primary={name}
           primaryTypographyProps={{ className: classes.listItemPrimaryText }}
-          secondaryTypographyProps={{component: "div"}}
+          secondaryTypographyProps={{ component: "div" }}
           secondary={
             <div className={classes.chipsContainer}>
               {skills.map((skillData, index) => (

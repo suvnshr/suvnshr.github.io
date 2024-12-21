@@ -26,13 +26,13 @@ export default function AppBottomNavigation() {
   const sections = ["about", "skills", "projects", "blogs"];
 
   useEffect(() => {
-      const _elements = [];
+    const _elements = [];
 
-      sections.forEach((sectionId) => {
-        _elements.push(document.querySelector("#" + sectionId));
-      });
+    sections.forEach((sectionId) => {
+      _elements.push(document.querySelector("#" + sectionId));
+    });
 
-      setElements(_elements);
+    setElements(_elements);
   }, []);
 
   return (
