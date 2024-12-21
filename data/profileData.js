@@ -5,7 +5,7 @@ const profileData = {
   avatar: "./avatar-v2.jpg",
   backgroundImage: "./background-blurred-v2.jpg",
   about:
-    "A web developer and a computer science undergraduate. A person who loves creating stuff and listening to music. Looking forward to work with passionate developers",
+    "A software engineer with 4 years of experience specializing in the MERN stack, as well as expertise in React Native and Flutter. Passionate about building innovative solutions and collaborating with driven developers. Enjoys creating impactful software and listening to music.",
 
   meta: {
     title: "Suvansh Rana's portfolio",
