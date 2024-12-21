@@ -14,9 +14,9 @@ import SkillChip from "./SkillChip";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    minWidth: 345,
+    width: 400,
     [theme.breakpoints.down("xs")]: {
-      minWidth: 310,
+      width: "80vw",
     },
   },
   avatar: { backgroundColor: customTheme.palette.primary.main },
