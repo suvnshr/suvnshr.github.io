@@ -8,13 +8,10 @@ import ProfileSection from "../sections/ProfileSection";
 import ProjectSection from "../sections/ProjectSection";
 
 import Head from "next/head";
+import { fetchMediumFeed } from "../utils/fetchMediumFeed";
 
 export async function getStaticProps() {
-  const res = await fetch(
-    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@suvnshr"
-  );
-
-  const blogsData = await res.json();
+  const blogsData = await fetchMediumFeed();
 
   return {
     props: {
@@ -27,9 +24,7 @@ export async function getStaticProps() {
 function App({ blogsData }) {
   return (
     <>
-      <Head>
-     
-      </Head>
+      <Head />
 
       <div className="App">
         <div id="about">

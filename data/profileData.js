@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaMedium, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
 
 const profileData = {
   name: "Suvansh Rana",
@@ -38,11 +38,9 @@ const profileData = {
       icon: <FaMedium size="28px" />,
       link: "https://medium.com/@suvnshr",
     },
-    // {
-    //   icon: <FaTwitter size="28px" />,
-    //   link: "https://twitter.com/@suvnshr",
-    // },
   ],
+  mediumFeedURL:
+    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@suvnshr",
 };
 
 export default profileData;
