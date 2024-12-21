@@ -4,7 +4,7 @@ import {
   SiDart,
   SiDjango,
   SiMaterialdesign,
-  SiNextDotJs,
+  SiNextdotjs,
   SiNginx,
 } from "react-icons/si";
 import { DiJavascript1 } from "react-icons/di";
@@ -32,7 +32,7 @@ const domainData = [
       },
       {
         name: "Next.js",
-        SkillIcon: SiNextDotJs,
+        SkillIcon: SiNextdotjs,
         about_link: "https://en.wikipedia.org/wiki/Next.js",
       },
       {
