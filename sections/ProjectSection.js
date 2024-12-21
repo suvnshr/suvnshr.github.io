@@ -5,11 +5,15 @@ import projectData from "../data/projectData";
 
 function ProjectSection() {
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down("sm"));
+  const isTabletOrSmaller = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <Container>
-      <Grid container justify={matches && "center"} spacing={3}>
+      <Grid
+        container
+        justify={isTabletOrSmaller ? "center" : "flex-start"}
+        spacing={3}
+      >
         {projectData.map((_projectData, index) => (
           <Grid item key={`project-card-${index}`}>
             <ProjectCard {..._projectData} />
