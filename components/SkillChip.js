@@ -16,10 +16,12 @@ function SkillChip({ name, SkillIcon, about_link }) {
       <Chip
         variant="outlined"
         avatar={
-          <SkillIcon
-            className={classes.skillIcon}
-            color={customTheme.palette.primary.light}
-          />
+          SkillIcon ? (
+            <SkillIcon
+              className={classes.skillIcon}
+              color={customTheme.palette.primary.light}
+            />
+          ) : null
         }
         className={classes.skillChip}
         label={name}
