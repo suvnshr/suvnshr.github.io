@@ -23,6 +23,7 @@ const useStyles = makeStyles({
     objectFit: "contain",
     height: 210,
     backgroundColor: "#2b2b2b",
+    filter: "brightness(0.8)",
   },
   button: {
     padding: "8px 16px",

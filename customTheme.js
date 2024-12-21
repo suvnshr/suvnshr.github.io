@@ -13,7 +13,11 @@ let customTheme = createMuiTheme({
     secondary: {
       main: grey[800],
     },
+    text: {
+      primary: "#fafafa",
+    }
   },
+ 
 });
 
 customTheme = responsiveFontSizes(customTheme);

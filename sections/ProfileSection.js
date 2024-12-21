@@ -10,6 +10,8 @@ import MyAvatar from "../components/MyAvatar";
 import SocialLinkButton from "../components/SocialLinkButton";
 import profileData from "../data/profileData";
 
+const TEXT_SHADOW = "0.5px 2px 2px #323232, 0 1px 3px #323232";
+
 const useStyles = makeStyles((theme) => ({
   background: {
     backgroundImage: `url(${profileData.backgroundImage})`,
@@ -21,9 +23,8 @@ const useStyles = makeStyles((theme) => ({
   },
 
   name: {
-    color: "#fff",
     padding: "0 10px",
-    textShadow: "0.5px 2px 2px #545454, 0 1px 3px #545454",
+    textShadow: TEXT_SHADOW,
     letterSpacing: "0.5px",
     [theme.breakpoints.down("sm")]: {
       marginTop: 20,
@@ -34,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#fcfcfc",
     padding: "0 10px",
     marginTop: 10,
-    textShadow: "0.5px 2px 2px #545454, 0 1px 3px #545454",
+    textShadow: TEXT_SHADOW,
     [theme.breakpoints.down("sm")]: {
       fontSize: "1.15em",
     },

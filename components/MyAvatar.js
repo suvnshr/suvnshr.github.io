@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
       height: 180,
       width: 180,
     },
+    filter: "brightness(0.93)",
     margin: "auto",
     borderRadius: 30,
   },
