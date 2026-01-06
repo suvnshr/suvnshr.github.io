@@ -7,10 +7,6 @@ body {
 }
 
 
-img {
-  -webkit-user-drag: none;
-  -moz-window-dragging: none;
-}
 
 .MuiPaper-rounded {
   border-radius: 28px !important;
@@ -26,7 +22,7 @@ img {
 }
 
 body::-webkit-scrollbar {
-  width: 15px;
+  width: 16px;
 }
 
 html {
@@ -51,6 +47,6 @@ html {
   background-color: #D670DA99;
   /* subtle orchid tone */
   pointer-events: none;
-  border-radius: 1px;
+  border-radius: 1.2px;
   /* soft edges */
 }

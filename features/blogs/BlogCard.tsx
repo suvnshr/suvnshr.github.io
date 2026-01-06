@@ -28,17 +28,6 @@ export default function BlogCard({
   categories,
   link,
 }: BlogCardProps) {
-  useEffect(() => {
-    document.addEventListener("DOMContentLoaded", function () {
-      const images = document.querySelectorAll("img");
-
-      images.forEach((image) => {
-        image.ondragstart = function (ev) {
-          ev.preventDefault();
-        };
-      });
-    });
-  }, []);
 
   return (
     <Card variant="outlined" className={styles.card}>

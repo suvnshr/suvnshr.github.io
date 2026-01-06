@@ -1,4 +1,4 @@
-$text-shadow: 0.5px 2px 2px #323232, 0 1px 3px #323232;
+$text-shadow: 0.6px 2px 2px #323232, 0 0.8px 4px #323232;
 
 
 .background {
@@ -18,26 +18,26 @@ $text-shadow: 0.5px 2px 2px #323232, 0 1px 3px #323232;
     /* vertical orchid traces */
     repeating-linear-gradient(90deg,
       rgba(214, 112, 218, 0.22) 0px,
-      rgba(214, 112, 218, 0.22) 1px,
-      transparent 1px,
+      rgba(214, 112, 218, 0.22) 0.8px,
+      transparent 0.8px,
       transparent 80px),
     /* horizontal orchid-pink traces */
     repeating-linear-gradient(0deg,
       rgba(214, 112, 218, 0.18) 0px,
-      rgba(214, 112, 218, 0.18) 1px,
-      transparent 1px,
+      rgba(214, 112, 218, 0.18) 0.8px,
+      transparent 0.8px,
       transparent 120px),
     /* diagonal soft orchid glow lines */
     repeating-linear-gradient(135deg,
       rgba(214, 112, 218, 0.12) 0px,
-      rgba(214, 112, 218, 0.12) 1px,
-      transparent 1px,
+      rgba(214, 112, 218, 0.12) 0.8px,
+      transparent 0.8px,
       transparent 160px);
   mask-image: radial-gradient(circle at center,
       rgba(0, 0, 0, 1) 45%,
       rgba(0, 0, 0, 0.4) 70%,
       transparent 100%);
-  opacity: 0.9;
+  opacity: 0.92;
   pointer-events: none;
 
   /* Animate the grid for subtle movement */
@@ -50,7 +50,7 @@ $text-shadow: 0.5px 2px 2px #323232, 0 1px 3px #323232;
   }
 
   50% {
-    background-position: 10px 0, 0 15px, -20px 20px;
+    background-position: 10px 0, 0 16px, -20px 20px;
   }
 
   100% {
