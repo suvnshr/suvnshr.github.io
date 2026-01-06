@@ -6,7 +6,7 @@ import styles from "./SkillChip.module.scss";
 
 interface SkillChipProps {
   name: string;
-  SkillIcon?: IconType;
+  SkillIcon: IconType;
   about_link: string;
 }
 
@@ -18,12 +18,10 @@ function SkillChip({ name, SkillIcon, about_link }: SkillChipProps) {
       <Chip
         variant="outlined"
         avatar={
-          SkillIcon ? (
-            <SkillIcon
-              className={styles.icon}
-              style={{ color: theme.palette.primary.light }}
-            />
-          ) : null
+          <SkillIcon
+            className={styles.icon}
+            style={{ color: theme.palette.primary.light }}
+          />
         }
         className={styles.chip}
         label={name}
