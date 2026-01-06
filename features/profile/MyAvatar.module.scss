@@ -1,0 +1,25 @@
+.paper {
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+  filter: brightness(0.94);
+  margin: auto;
+  overflow: hidden;
+  border-radius: 50% !important;
+  padding: 2px;
+  background: transparent;
+  background-color: #D670DA !important;
+
+  @media (min-width: 600px) {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+

@@ -1,0 +1,25 @@
+.card {
+  max-width: 345px;
+  margin-top: 20px;
+  padding: 8px
+}
+
+.cardMedia {
+  object-fit: contain;
+  height: 210px;
+  background-color: #2b2b2b;
+  filter: brightness(0.8);
+}
+
+.categoryChip {
+  margin: 4px 4px 4px 0px;
+  line-height: 1.9;
+}
+
+.cardActions {
+  padding: 8px 16px 12px !important;
+}
+
+.button {
+  padding: 8px 16px;
+}
