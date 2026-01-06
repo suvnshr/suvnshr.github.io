@@ -22,8 +22,3 @@ export interface SocialLinkButtonProps {
   link: string;
   label: string;
 }
-
-export interface MyAvatarProps {
-  src: string;
-}
-
