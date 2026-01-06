@@ -4,19 +4,20 @@ import {
   Container,
   Grid,
   Typography,
-  useMediaQuery,
-  useTheme,
 } from "@mui/material";
 
-import MyAvatar from "./MyAvatar";
 import SocialLinkButton from "./SocialLinkButton";
 import profileData from "./data/profileData";
 import styles from "./ProfileSection.module.scss";
 
+/**
+ * Displays the user's main profile information, including name, about, and social links.
+ *
+ * @returns JSX.Element Profile information section
+ * @remarks Loads data from profileData and uses custom SCSS styling.
+ * @public
+ */
 export default function ProfileSection() {
-  const theme = useTheme();
-  const isMediumOrUp = useMediaQuery(theme.breakpoints.up("md"));
-
   return (
     <Grid
       container
@@ -62,4 +63,3 @@ export default function ProfileSection() {
     </Grid>
   );
 }
-

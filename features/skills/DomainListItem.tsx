@@ -2,26 +2,27 @@ import React from "react";
 
 import {
   Paper,
-  Avatar,
   ListItem,
   ListItemText,
-  ListItemAvatar,
-  useTheme,
 } from "@mui/material";
 
 import SkillChip from "./SkillChip";
-import { Domain } from "./data/domainData";
-import { IconType } from "react-icons";
 import styles from "./DomainListItem.module.scss";
+import type { DomainListItemProps } from "./types";
 
-interface DomainListItemProps {
-  name: string;
-  icon: IconType;
-  skills: Domain["skills"];
-}
-
-export default function DomainListItem({ name, icon: Icon, skills }: DomainListItemProps) {
-  const theme = useTheme();
+/**
+ * Renders a domain list item with its name, icon, and associated skills.
+ *
+ * Each skill is displayed using the {@link SkillChip} component.
+ *
+ * @param props - Component props.
+ * @param props.name - Display name of the domain.
+ * @param props.icon - Icon component representing the domain.
+ * @param props.skills - Collection of skills associated with the domain.
+ *
+ * @returns A styled list item containing domain details.
+ */
+export default function DomainListItem({ name, skills }: DomainListItemProps) {
 
   return (
     <Paper variant="outlined" className={styles.paper}>
@@ -48,4 +49,3 @@ export default function DomainListItem({ name, icon: Icon, skills }: DomainListI
     </Paper>
   );
 }
-

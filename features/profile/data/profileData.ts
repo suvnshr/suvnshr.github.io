@@ -1,23 +1,7 @@
 import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
 import { IconType } from "react-icons";
 
-export interface ProfileData {
-  name: string;
-  avatar: string;
-  backgroundImage: string;
-  about: string;
-  meta: {
-    title: string;
-    url: string;
-    tags: string[];
-  };
-  links: Array<{
-    icon: IconType;
-    link: string;
-    label: string;
-  }>;
-  mediumFeedURL: string;
-}
+import type { ProfileData } from "../types";
 
 const profileData: ProfileData = {
   name: "Suvansh Rana",

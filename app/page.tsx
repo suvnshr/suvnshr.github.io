@@ -21,6 +21,16 @@ interface MediumFeedResponse {
   }>;
 }
 
+/**
+ * HomePage is the main landing page of the portfolio website, assembling
+ * all sections such as About, Skills, Projects, and Blogs.
+ *
+ * Fetches blog data from Medium and passes it to BlogSection.
+ * Responsive design: adapts navigation and layout for different devices.
+ *
+ * @returns JSX.Element Main page component
+ * @remarks This is the root container for the homepage structure.
+ */
 export default function HomePage() {
   const theme = useTheme();
   const isMediumOrDown = useMediaQuery(theme.breakpoints.down("md"));

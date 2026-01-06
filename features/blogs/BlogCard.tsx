@@ -10,21 +10,21 @@ import { htmlToText } from "html-to-text";
 import OuterLink from "../../shared/ui/OuterLink";
 import Margin from "../../shared/ui/Margin";
 import { OpenInNewOutlined } from "@mui/icons-material";
-import { extractImagePaths } from "./utils/extractImagePaths";
 import styles from "./BlogCard.module.scss";
 
-interface BlogCardProps {
-  title: string;
-  description: string;
-  thumbnail?: string;
-  categories: string[];
-  link: string;
-}
+import type { BlogCardProps } from "./types";
 
+/**
+ * Renders a card displaying blog post details, categories, and a link to the full article.
+ *
+ * @param props - Blog post data
+ * @returns JSX.Element Blog card component
+ * @remarks Styles content from BlogCard.module.scss and uses html-to-text for excerpt.
+ * @public
+ */
 export default function BlogCard({
   title,
   description,
-  thumbnail,
   categories,
   link,
 }: BlogCardProps) {
@@ -39,8 +39,6 @@ export default function BlogCard({
       });
     });
   }, []);
-
-  const imagePaths = extractImagePaths(description);
 
   return (
     <Card variant="outlined" className={styles.card}>

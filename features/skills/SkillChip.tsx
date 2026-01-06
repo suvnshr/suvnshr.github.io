@@ -1,16 +1,11 @@
 import { Chip, useTheme } from "@mui/material";
 import React from "react";
-import { IconType } from "react-icons";
 import OuterLink from "../../shared/ui/OuterLink";
 import styles from "./SkillChip.module.scss";
+import type { SkillChipProps } from "./types";
 
-interface SkillChipProps {
-  name: string;
-  SkillIcon: IconType;
-  about_link: string;
-}
 
-function SkillChip({ name, SkillIcon, about_link }: SkillChipProps) {
+export default function SkillChip({ name, SkillIcon, about_link }: SkillChipProps) {
   const theme = useTheme();
 
   return (
@@ -30,6 +25,3 @@ function SkillChip({ name, SkillIcon, about_link }: SkillChipProps) {
     </OuterLink>
   );
 }
-
-export default SkillChip;
-

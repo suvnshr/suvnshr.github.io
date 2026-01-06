@@ -2,7 +2,6 @@ import React from "react";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
@@ -10,11 +9,18 @@ import { Chip, Grid } from "@mui/material";
 import OuterLink from "../../shared/ui/OuterLink";
 import Margin from "../../shared/ui/Margin";
 import { OpenInNewOutlined } from "@mui/icons-material";
-import { Project } from "./data/projectData";
 import styles from "./ProjectCard.module.scss";
 
-interface ProjectCardProps extends Project {}
+import type { ProjectCardProps } from "./types";
 
+/**
+ * Renders a styled card for each project, displaying its details, tags, and links.
+ *
+ * @param props - Project details
+ * @returns JSX.Element Single project card
+ * @remarks Displays project and GitHub links, uses custom SCSS.
+ * @public
+ */
 export default function ProjectCard({
   name,
   description,
@@ -84,4 +90,3 @@ export default function ProjectCard({
     </Card>
   );
 }
-

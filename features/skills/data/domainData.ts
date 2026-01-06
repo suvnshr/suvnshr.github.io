@@ -9,34 +9,18 @@ import {
 } from "react-icons/si";
 import { DiJavascript1 } from "react-icons/di";
 import { RiFlutterFill, RiSailboatLine } from "react-icons/ri";
-import { FiGlobe } from "react-icons/fi";
-import { ImMobile2 } from "react-icons/im";
-import { IoCodeSlash, IoLogoPython } from "react-icons/io5";
+import { IoLogoPython } from "react-icons/io5";
 import {
   FaDocker,
   FaNodeJs,
-  FaPalette,
   FaReact,
-  FaTools,
 } from "react-icons/fa";
-import { IconType } from "react-icons";
+import type { Domain } from "../types";
 
-export interface Skill {
-  name: string;
-  SkillIcon: IconType;
-  about_link: string;
-}
-
-export interface Domain {
-  name: string;
-  icon: IconType;
-  skills: Skill[];
-}
 
 const domainData: Domain[] = [
   {
     name: "Web Development",
-    icon: FiGlobe,
     skills: [
       {
         name: "React.js",
@@ -67,7 +51,6 @@ const domainData: Domain[] = [
   },
   {
     name: "Mobile development",
-    icon: ImMobile2,
     skills: [
       {
         SkillIcon: RiFlutterFill,
@@ -83,7 +66,6 @@ const domainData: Domain[] = [
   },
   {
     name: "Programming Languages",
-    icon: IoCodeSlash,
     skills: [
       {
         name: "Python",
@@ -106,7 +88,6 @@ const domainData: Domain[] = [
   },
   {
     name: "DevOps & Tools",
-    icon: FaTools,
     skills: [
       {
         name: "Docker",
@@ -127,7 +108,6 @@ const domainData: Domain[] = [
   },
   {
     name: "Design",
-    icon: FaPalette,
     skills: [
       {
         name: "Material Design",

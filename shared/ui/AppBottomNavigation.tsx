@@ -8,6 +8,13 @@ import { Scrollspy } from "@makotot/ghostui"
 import styles from "./AppBottomNavigation.module.scss";
 
 
+/**
+ * AppBottomNavigation renders the bottom navigation bar for quick access to
+ * main page sections (About, Skills, Projects, Blogs). Highlights current section and enables smooth scrolling.
+ *
+ * @returns JSX.Element Navigation bar component
+ * @remarks Uses Scrollspy for section detection and smooth scrolling behavior.
+ */
 export default function AppBottomNavigation() {
   const sections = ["about", "skills", "projects", "blogs"];
 

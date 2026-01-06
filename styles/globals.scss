@@ -20,7 +20,8 @@ img {
   border-radius: 20px !important;
 }
 
-.MuiButtonBase-root.MuiFab-root, .MuiButton-contained {
+.MuiButtonBase-root.MuiFab-root,
+.MuiButton-contained {
   background: linear-gradient(135deg, #D670DA, #F4A1F4) !important;
 }
 
@@ -30,7 +31,7 @@ body::-webkit-scrollbar {
 
 html {
   scrollbar-width: thick;
-  scrollbar-color: #D670DA #424242;
+  scrollbar-color: #D670DA #161616;
 }
 
 .page-section {
@@ -45,8 +46,11 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 2px; /* thin, subtle line */
-  background-color: rgba(214, 112, 218, 0.6); /* subtle orchid tone */
+  height: 2px;
+  /* thin, subtle line */
+  background-color: #D670DA99;
+  /* subtle orchid tone */
   pointer-events: none;
-  border-radius: 1px; /* soft edges */
+  border-radius: 1px;
+  /* soft edges */
 }

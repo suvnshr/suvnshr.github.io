@@ -1,19 +1,17 @@
 import React from "react";
-import { Container, Grid, useMediaQuery, useTheme } from "@mui/material";
+import { Grid, useMediaQuery, useTheme } from "@mui/material";
 import BlogCard from "./BlogCard";
 
-interface BlogSectionProps {
-  blogsData: {
-    items: Array<{
-      title: string;
-      description: string;
-      thumbnail?: string;
-      categories: string[];
-      link: string;
-    }>;
-  };
-}
+import type { BlogSectionProps } from "./types";
 
+/**
+ * Renders a responsive grid of BlogCard components based on Medium feed data.
+ *
+ * @param blogsData - Object containing an array of blog post items
+ * @returns JSX.Element List of blog cards
+ * @remarks Uses MUI Grid and theme breakpoints for layout.
+ * @public
+ */
 export default function BlogSection({ blogsData }: BlogSectionProps) {
   const theme = useTheme();
   const isTabletOrSmaller = useMediaQuery(theme.breakpoints.down("md"));
@@ -32,4 +30,3 @@ export default function BlogSection({ blogsData }: BlogSectionProps) {
     </Grid>
   );
 }
-

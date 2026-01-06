@@ -25,14 +25,6 @@ export const metadata: Metadata = {
     ],
     type: "profile",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: profileData.meta.title,
-    description: profileData.about,
-    site: "@suvnshr",
-    creator: "@suvnshr",
-    images: [profileData.avatar],
-  },
 };
 
 interface RootLayoutProps {

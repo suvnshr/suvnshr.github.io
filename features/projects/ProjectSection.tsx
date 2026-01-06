@@ -1,9 +1,16 @@
 import React from "react";
-import { Container, Grid, useMediaQuery, useTheme } from "@mui/material";
+import { Grid, useMediaQuery, useTheme } from "@mui/material";
 import ProjectCard from "./ProjectCard";
 import projectData from "./data/projectData";
 
-function ProjectSection() {
+/**
+ * Renders a grid of ProjectCard components using project data.
+ *
+ * @returns JSX.Element List of projects section
+ * @remarks Responsive display using MUI Grid and theme breakpoints.
+ * @public
+ */
+export default function ProjectSection() {
   const theme = useTheme();
   const isTabletOrSmaller = useMediaQuery(theme.breakpoints.down("md"));
 
@@ -21,6 +28,3 @@ function ProjectSection() {
     </Grid>
   );
 }
-
-export default ProjectSection;
-

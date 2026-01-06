@@ -3,6 +3,13 @@ import { useTheme } from "@mui/material/styles";
 import React from "react";
 import styles from "./Copyright.module.scss";
 
+/**
+ * Displays the copyright information and current year in a styled footer.
+ *
+ * @returns JSX.Element Copyright footer
+ * @remarks Uses MUI Grid and theme for styling.
+ * @public
+ */
 export default function Copyright() {
   const theme = useTheme();
 

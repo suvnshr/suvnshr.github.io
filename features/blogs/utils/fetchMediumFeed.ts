@@ -1,19 +1,15 @@
 import profileData from "@/features/profile/data/profileData"
 
-interface MediumFeedResponse {
-  items: Array<{
-    title: string;
-    description: string;
-    thumbnail?: string;
-    categories: string[];
-    link: string;
-  }>;
-}
+import type { MediumFeedResponse } from "../types";
 
-// Fetch Medium feed
+/**
+ * Fetches blog feed data from the user's Medium account.
+ *
+ * @returns A promise resolving to a MediumFeedResponse object
+ * @public
+ */
 export async function fetchMediumFeed(): Promise<MediumFeedResponse> {
   const res = await fetch(profileData.mediumFeedURL);
 
   return await res.json();
 }
-
