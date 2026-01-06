@@ -1,5 +1,6 @@
-# My Portfolio
+# Portfolio
 
-Hey! 
+Personal portfolio built with Next.js 16, React 19, TypeScript, and Material UI v7.
 
-This is my portfolio website made with [React.js](https://reactjs.org/), [Next.js](https://nextjs.org/) and [Material-UI](https://material-ui.com/).
+Fully static and optimized for GitHub Pages.
+Focused on clean UI architecture, accessibility, and maintainable code.
