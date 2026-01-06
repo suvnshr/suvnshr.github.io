@@ -6,7 +6,6 @@ import type { ProfileData } from "../types";
 const profileData: ProfileData = {
   name: "Suvansh Rana",
   avatar: "./avatar-v3.jpg",
-  backgroundImage: "./background-blurred-v2.jpg",
   about:
     "Full-stack software engineer with 4.5+ years of experience working with the MERN stack, focused on clean code, performance, and real-world products.",
 

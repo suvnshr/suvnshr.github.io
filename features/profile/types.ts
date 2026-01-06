@@ -3,7 +3,6 @@ import type { IconType } from "react-icons";
 export interface ProfileData {
   name: string;
   avatar: string;
-  backgroundImage: string;
   about: string;
   meta: {
     title: string;
