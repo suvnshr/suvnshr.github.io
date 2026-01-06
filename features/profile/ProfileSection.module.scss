@@ -1,0 +1,163 @@
+$text-shadow: 0.5px 2px 2px #323232, 0 1px 3px #323232;
+
+
+.background {
+  position: relative;
+  min-height: 100vh;
+  background-color: #16277c85;
+  /* deep blue base */
+  overflow: hidden;
+}
+
+/* Wire grid with D670DA orchid base */
+.background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    /* vertical orchid traces */
+    repeating-linear-gradient(90deg,
+      rgba(214, 112, 218, 0.22) 0px,
+      rgba(214, 112, 218, 0.22) 1px,
+      transparent 1px,
+      transparent 80px),
+    /* horizontal orchid-pink traces */
+    repeating-linear-gradient(0deg,
+      rgba(214, 112, 218, 0.18) 0px,
+      rgba(214, 112, 218, 0.18) 1px,
+      transparent 1px,
+      transparent 120px),
+    /* diagonal soft orchid glow lines */
+    repeating-linear-gradient(135deg,
+      rgba(214, 112, 218, 0.12) 0px,
+      rgba(214, 112, 218, 0.12) 1px,
+      transparent 1px,
+      transparent 160px);
+  mask-image: radial-gradient(circle at center,
+      rgba(0, 0, 0, 1) 45%,
+      rgba(0, 0, 0, 0.4) 70%,
+      transparent 100%);
+  opacity: 0.9;
+  pointer-events: none;
+
+  /* Animate the grid for subtle movement */
+  animation: wire-shimmer 18s linear infinite;
+}
+
+@keyframes wire-shimmer {
+  0% {
+    background-position: 0 0, 0 0, 0 0;
+  }
+
+  50% {
+    background-position: 10px 0, 0 15px, -20px 20px;
+  }
+
+  100% {
+    background-position: 0 0, 0 0, 0 0;
+  }
+}
+
+/* Ambient glow layer in orchid */
+.background::after {
+  content: "";
+  position: absolute;
+  inset: -25%;
+  background:
+    radial-gradient(circle at 25% 30%,
+      rgba(214, 112, 218, 0.35),
+      transparent 55%),
+    radial-gradient(circle at 70% 40%,
+      rgba(214, 112, 218, 0.30),
+      transparent 60%),
+    radial-gradient(circle at 50% 70%,
+      rgba(214, 112, 218, 0.28),
+      transparent 65%);
+  filter: blur(80px);
+  animation: energy-drift 28s ease-in-out infinite alternate, glow-pulse 6s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+/* Existing gentle drift */
+@keyframes energy-drift {
+  from {
+    transform: translate(-3%, -2%);
+  }
+
+  to {
+    transform: translate(3%, 2%);
+  }
+}
+
+/* New pulsing glow animation */
+@keyframes glow-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.85;
+  }
+
+  50% {
+    transform: scale(1.05);
+    opacity: 0.95;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0.85;
+  }
+}
+
+
+.profileContainer {
+  padding: 50px 0;
+}
+
+.contentContainer {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @media (max-width: 600px) {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.name {
+  padding: 0 16px;
+  text-shadow: $text-shadow;
+  margin-top: 0;
+
+  @media (max-width: 600px) {
+    margin-top: 20px;
+  }
+}
+
+.about {
+  font-size: 1.35em;
+  color: #fcfcfc;
+  padding: 0 16px;
+  margin-top: 12px !important;
+  text-shadow: $text-shadow;
+
+  @media (max-width: 600px) {
+    font-size: 1.15em;
+  }
+}
+
+.socialContainer {
+  margin-top: 16px !important;
+  padding: 0 16px;
+}
+
+.avatarContainer {
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+
+  @media (max-width: 600px) {
+    text-align: center;
+    justify-content: center;
+  }
+}

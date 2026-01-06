@@ -1,0 +1,12 @@
+.scrollspy {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.bottomNavigation {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+}
