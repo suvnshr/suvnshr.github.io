@@ -5,8 +5,3 @@ export interface ProvidersProps {
 export interface MarginProps {
     count?: number;
 }
-
-export interface OuterLinkProps {
-    link: string;
-    children: React.ReactNode;
-}

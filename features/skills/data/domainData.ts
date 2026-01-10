@@ -25,27 +25,27 @@ const domainData: Domain[] = [
       {
         name: "React.js",
         SkillIcon: FaReact,
-        about_link: "https://en.wikipedia.org/wiki/React_(JavaScript_library)",
+        aboutLink: "https://en.wikipedia.org/wiki/React_(JavaScript_library)",
       },
       {
         name: "Next.js",
         SkillIcon: SiNextdotjs,
-        about_link: "https://en.wikipedia.org/wiki/Next.js",
+        aboutLink: "https://en.wikipedia.org/wiki/Next.js",
       },
       {
         name: "Node.js",
         SkillIcon: FaNodeJs,
-        about_link: "https://en.wikipedia.org/wiki/Node.js",
+        aboutLink: "https://en.wikipedia.org/wiki/Node.js",
       },
       {
         name: "Sails.js",
         SkillIcon: RiSailboatLine,
-        about_link: "https://en.wikipedia.org/wiki/Sails.js",
+        aboutLink: "https://en.wikipedia.org/wiki/Sails.js",
       },
       {
         name: "Django",
         SkillIcon: SiDjango,
-        about_link: "https://en.wikipedia.org/wiki/Django_(web_framework)",
+        aboutLink: "https://en.wikipedia.org/wiki/Django_(web_framework)",
       },
     ],
   },
@@ -55,12 +55,12 @@ const domainData: Domain[] = [
       {
         SkillIcon: RiFlutterFill,
         name: "Flutter",
-        about_link: "https://en.wikipedia.org/wiki/Flutter_(software)",
+        aboutLink: "https://en.wikipedia.org/wiki/Flutter_(software)",
       },
       {
         SkillIcon: FaReact,
         name: "React Native",
-        about_link: "https://en.wikipedia.org/wiki/React_Native",
+        aboutLink: "https://en.wikipedia.org/wiki/React_Native",
       },
     ],
   },
@@ -70,19 +70,19 @@ const domainData: Domain[] = [
       {
         name: "Python",
         SkillIcon: IoLogoPython,
-        about_link:
+        aboutLink:
           "https://en.wikipedia.org/wiki/Python_(programming_language)",
       },
       {
         name: "JavaScript",
         SkillIcon: DiJavascript1,
-        about_link:
+        aboutLink:
           "https://en.wikipedia.org/wiki/JavaScript",
       },
       {
         name: "Dart",
         SkillIcon: SiDart,
-        about_link: "https://en.wikipedia.org/wiki/Dart_(programming_language)",
+        aboutLink: "https://en.wikipedia.org/wiki/Dart_(programming_language)",
       },
     ],
   },
@@ -92,17 +92,17 @@ const domainData: Domain[] = [
       {
         name: "Docker",
         SkillIcon: FaDocker,
-        about_link: "https://en.wikipedia.org/wiki/Docker_(software)",
+        aboutLink: "https://en.wikipedia.org/wiki/Docker_(software)",
       },
       {
         name: "Nginx",
         SkillIcon: SiNginx,
-        about_link: "https://en.wikipedia.org/wiki/Nginx",
+        aboutLink: "https://en.wikipedia.org/wiki/Nginx",
       },
       {
         name: "Ansible",
         SkillIcon: SiAnsible,
-        about_link: "https://en.wikipedia.org/wiki/Ansible_(software)",
+        aboutLink: "https://en.wikipedia.org/wiki/Ansible_(software)",
       },
     ],
   },
@@ -112,12 +112,12 @@ const domainData: Domain[] = [
       {
         name: "Material Design",
         SkillIcon: SiMaterialdesign,
-        about_link: "https://en.wikipedia.org/wiki/Material_Design",
+        aboutLink: "https://en.wikipedia.org/wiki/Material_Design",
       },
       {
         name: "Ant Design",
         SkillIcon: SiAntdesign,
-        about_link: "https://en.wikipedia.org/wiki/Ant_Design",
+        aboutLink: "https://en.wikipedia.org/wiki/Ant_Design",
       },
     ],
   },

@@ -6,7 +6,6 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
 import { Chip, Grid } from "@mui/material";
-import OuterLink from "../../shared/ui/OuterLink";
 import Margin from "../../shared/ui/Margin";
 import { OpenInNewOutlined } from "@mui/icons-material";
 import styles from "./ProjectCard.module.scss";
@@ -58,31 +57,33 @@ export default function ProjectCard({
       <CardActions className={styles.cardActions}>
         <Grid container justifyContent="flex-end" spacing={2}>
           <Grid>
-            <OuterLink link={githubLink}>
-              <Button
-                variant={!projectLink ? "contained" : "outlined"}
-                className={styles.button}
-                size="small"
-                color="primary"
-              >
-                Github
-              </Button>
-            </OuterLink>
+            <Button
+              variant={!projectLink ? "contained" : "outlined"}
+              className={styles.button}
+              size="small"
+              color="primary"
+              href={githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </Button>
           </Grid>
 
           {projectLink && (
             <Grid>
-              <OuterLink link={projectLink}>
-                <Button
-                  size="small"
-                  color="primary"
-                  variant="contained"
-                  className={styles.button}
-                  startIcon={<OpenInNewOutlined />}
-                >
-                  Project
-                </Button>
-              </OuterLink>
+              <Button
+                size="small"
+                color="primary"
+                variant="contained"
+                className={styles.button}
+                startIcon={<OpenInNewOutlined />}
+                href={projectLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Project
+              </Button>
             </Grid>
           )}
         </Grid>

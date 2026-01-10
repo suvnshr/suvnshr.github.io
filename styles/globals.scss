@@ -7,6 +7,35 @@ body {
 }
 
 
+/* Your existing rules */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+a:focus-visible,
+[type="checkbox"]:focus-visible,
+[type="radio"]:focus-visible,
+[type="file"]:focus-visible,
+[type="range"]:focus-visible,
+[tabindex]:focus-visible,
+[contenteditable]:focus-visible,
+details:focus-visible,
+summary:focus-visible,
+audio:focus-visible,
+video:focus-visible,
+[role="button"]:focus-visible,
+[role="link"]:focus-visible,
+[role="tab"]:focus-visible,
+[role="menuitem"]:focus-visible,
+[role="option"]:focus-visible,
+[role="checkbox"]:focus-visible,
+[role="radio"]:focus-visible,
+[role="switch"]:focus-visible,
+[role="slider"]:focus-visible,
+[role="textbox"]:focus-visible {
+  outline: 2px dashed #D670DA !important;
+  outline-offset: 2px;
+}
 
 .MuiPaper-rounded {
   border-radius: 28px !important;
