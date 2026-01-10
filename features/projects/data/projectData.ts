@@ -5,7 +5,7 @@ const projectData: Project[] = [
     name: "DevXplore",
     description:
       "A search engine for developers for finding Github repos, youtube tutorials, online courses, and documentation faster.",
-    projectLink: "https://devxplore-v2.onrender.com",
+    projectLink: "https://devxplore.suvanshrana.com",
     githubLink: "https://github.com/suvnshr/developer-search",
     tags: ["search-engine", "django", "materialize-css"],
   },

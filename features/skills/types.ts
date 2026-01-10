@@ -3,7 +3,7 @@ import { IconType } from "react-icons";
 export interface Skill {
     name: string;
     SkillIcon: IconType;
-    about_link: string;
+    aboutLink: string;
 }
 
 export interface Domain {
@@ -15,7 +15,7 @@ export interface Domain {
 export interface SkillChipProps {
     name: string;
     SkillIcon: IconType;
-    about_link: string;
+    aboutLink: string;
 }
 
 

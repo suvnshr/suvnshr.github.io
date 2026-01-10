@@ -7,7 +7,6 @@ import Typography from "@mui/material/Typography";
 
 import { Chip, Grid } from "@mui/material";
 import { htmlToText } from "html-to-text";
-import OuterLink from "../../shared/ui/OuterLink";
 import Margin from "../../shared/ui/Margin";
 import { OpenInNewOutlined } from "@mui/icons-material";
 import styles from "./BlogCard.module.scss";
@@ -64,17 +63,19 @@ export default function BlogCard({
       <CardActions className={styles.cardActions}>
         <Grid container justifyContent="flex-end">
           <Grid>
-            <OuterLink link={link}>
-              <Button
-                startIcon={<OpenInNewOutlined />}
-                variant="contained"
-                size="small"
-                color="primary"
-                className={styles.button}
-              >
-                Read
-              </Button>
-            </OuterLink>
+            <Button
+              startIcon={<OpenInNewOutlined />}
+              variant="contained"
+              size="small"
+              color="primary"
+              component="a"
+              className={styles.button}
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Read
+            </Button>
           </Grid>
         </Grid>
       </CardActions>
