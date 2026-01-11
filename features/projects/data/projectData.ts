@@ -32,6 +32,7 @@ const projectData: Project[] = [
     description:
       "A forum for farmers where then can ask questions about the problems they face in farming",
     tags: ["forum", "django", "materialize-css"],
+    projectLink: "https://pucho-kisan.onrender.com",
     githubLink: "https://github.com/aayushbisen/pucho-kisan",
   },
 ];
