@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -27,7 +27,6 @@ export default function BlogCard({
   categories,
   link,
 }: BlogCardProps) {
-
   return (
     <Card variant="outlined" className={styles.card}>
       <CardContent>
@@ -82,4 +81,3 @@ export default function BlogCard({
     </Card>
   );
 }
-

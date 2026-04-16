@@ -1,7 +1,7 @@
 export interface ProvidersProps {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }
 
 export interface MarginProps {
-    count?: number;
+  count?: number;
 }

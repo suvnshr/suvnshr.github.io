@@ -10,13 +10,8 @@ import {
 import { DiJavascript1 } from "react-icons/di";
 import { RiFlutterFill, RiSailboatLine } from "react-icons/ri";
 import { IoLogoPython } from "react-icons/io5";
-import {
-  FaDocker,
-  FaNodeJs,
-  FaReact,
-} from "react-icons/fa";
+import { FaDocker, FaNodeJs, FaReact } from "react-icons/fa";
 import type { Domain } from "../types";
-
 
 const domainData: Domain[] = [
   {
@@ -76,8 +71,7 @@ const domainData: Domain[] = [
       {
         name: "JavaScript",
         SkillIcon: DiJavascript1,
-        aboutLink:
-          "https://en.wikipedia.org/wiki/JavaScript",
+        aboutLink: "https://en.wikipedia.org/wiki/JavaScript",
       },
       {
         name: "Dart",
@@ -124,4 +118,3 @@ const domainData: Domain[] = [
 ];
 
 export default domainData;
-

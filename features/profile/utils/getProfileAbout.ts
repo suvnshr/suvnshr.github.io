@@ -11,7 +11,7 @@ const getExperienceDuration = (
   const duration = intervalToDuration({
     start: startDate,
     end: currentDate,
-  })
+  });
   const years = duration.years ?? 0;
   const months = duration.months ?? 0;
 

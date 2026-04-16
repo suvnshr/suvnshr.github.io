@@ -1,5 +1,4 @@
 import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
-import { IconType } from "react-icons";
 
 import type { ProfileData } from "../types";
 import { getProfileAbout } from "../utils/getProfileAbout";
@@ -36,12 +35,12 @@ const profileData: ProfileData = {
     {
       icon: FaLinkedin,
       link: "https://linkedin.com/in/suvnshr",
-      label: "LinkedIn"
+      label: "LinkedIn",
     },
     {
       icon: FaMedium,
       link: "https://medium.com/@suvnshr",
-      label: "Medium"
+      label: "Medium",
     },
   ],
   mediumFeedURL:
@@ -49,4 +48,3 @@ const profileData: ProfileData = {
 };
 
 export default profileData;
-

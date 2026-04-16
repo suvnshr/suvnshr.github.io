@@ -4,9 +4,8 @@ import React, { useRef, useEffect, RefObject } from "react";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import { Book, BubbleChart, Laptop, Person } from "@mui/icons-material";
-import { Scrollspy } from "@makotot/ghostui"
+import { Scrollspy } from "@makotot/ghostui";
 import styles from "./AppBottomNavigation.module.scss";
-
 
 /**
  * AppBottomNavigation renders the bottom navigation bar for quick access to
@@ -23,14 +22,15 @@ export default function AppBottomNavigation() {
     useRef<Element>(null),
     useRef<Element>(null),
     useRef<Element>(null),
-    useRef<Element>(null)
+    useRef<Element>(null),
   ] as unknown as RefObject<Element>[];
 
   useEffect(() => {
     sections.forEach((sectionId, index) => {
       const element = document.querySelector(`#${sectionId}`) as Element | null;
       if (element && sectionRefs[index]) {
-        (sectionRefs[index] as React.MutableRefObject<Element>).current = element;
+        (sectionRefs[index] as React.MutableRefObject<Element>).current =
+          element;
       }
     });
   }, []);
@@ -45,7 +45,7 @@ export default function AppBottomNavigation() {
             if (targetRef?.current) {
               targetRef.current.scrollIntoView({
                 behavior: "smooth",
-                block: "start"
+                block: "start",
               });
             }
           }}

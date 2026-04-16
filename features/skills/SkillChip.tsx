@@ -3,8 +3,11 @@ import React from "react";
 import styles from "./SkillChip.module.scss";
 import type { SkillChipProps } from "./types";
 
-
-export default function SkillChip({ name, SkillIcon, aboutLink }: SkillChipProps) {
+export default function SkillChip({
+  name,
+  SkillIcon,
+  aboutLink,
+}: SkillChipProps) {
   const theme = useTheme();
 
   return (

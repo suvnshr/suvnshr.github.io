@@ -38,4 +38,3 @@ const projectData: Project[] = [
 ];
 
 export default projectData;
-

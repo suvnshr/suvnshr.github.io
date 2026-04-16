@@ -1,4 +1,4 @@
-import profileData from "@/features/profile/data/profileData"
+import profileData from "@/features/profile/data/profileData";
 
 import type { MediumFeedResponse } from "../types";
 
