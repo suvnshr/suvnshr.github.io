@@ -1,5 +1,5 @@
-:HL["https://suvnshr.github.io/_next/static/chunks/a9658e9e4ad9c7b6.css","style"]
-:HL["https://suvnshr.github.io/_next/static/chunks/b841a3f1210fdaf9.css","style"]
+:HL["https://suvnshr.github.io/_next/static/chunks/0gei-5-4x2vrp.css","style"]
+:HL["https://suvnshr.github.io/_next/static/chunks/01~tj1h-l3xia.css","style"]
 :HL["https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap","style"]
 :HL["https://fonts.googleapis.com/icon?family=Material+Icons","style"]
-0:{"buildId":"YGHDoogjeKYZgFRcN_k44","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"iFeM6LtQq_xSqKAGBabtz"}
