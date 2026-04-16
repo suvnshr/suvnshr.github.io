@@ -1,10 +1,6 @@
 "use client";
 
-import {
-  Container,
-  Grid,
-  Typography,
-} from "@mui/material";
+import { Container, Grid, Typography } from "@mui/material";
 
 import SocialLinkButton from "./SocialLinkButton";
 import profileData from "./data/profileData";
@@ -19,16 +15,11 @@ import styles from "./ProfileSection.module.scss";
  */
 export default function ProfileSection() {
   return (
-    <Grid
-      container
-      alignItems="center"
-      className={styles.background}
-    >
+    <Grid container alignItems="center" className={styles.background}>
       <Grid size={{ xs: 12 }} className={styles.profileContainer}>
         <Container>
           <Grid container>
             <Grid size={12} className={styles.contentContainer}>
-
               <Typography variant="h2" className={styles.name}>
                 {profileData.name}
               </Typography>
@@ -40,14 +31,9 @@ export default function ProfileSection() {
               >
                 {profileData.about}
               </Typography>
-
             </Grid>
 
-            <Grid
-              container
-              size={12}
-              className={styles.avatarContainer}
-            >
+            <Grid container size={12} className={styles.avatarContainer}>
               <div className={styles.socialContainer}>
                 {profileData.links.map((linkData, index) => (
                   <SocialLinkButton

@@ -12,9 +12,8 @@ export interface BlogSectionProps {
   };
 }
 
-export interface BlogCardProps extends BlogItem {}
+export type BlogCardProps = BlogItem;
 
 export interface MediumFeedResponse {
   items: BlogItem[];
 }
-

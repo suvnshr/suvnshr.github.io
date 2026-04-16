@@ -6,5 +6,4 @@ export interface Project {
   githubLink: string;
 }
 
-export interface ProjectCardProps extends Project {}
-
+export type ProjectCardProps = Project;

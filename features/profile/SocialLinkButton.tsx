@@ -11,11 +11,22 @@ import type { SocialLinkButtonProps } from "./types";
  * @remarks Styled using FAB and custom SCSS.
  * @public
  */
-export default function SocialLinkButton({ icon: Icon, link, label }: SocialLinkButtonProps) {
+export default function SocialLinkButton({
+  icon: Icon,
+  link,
+  label,
+}: SocialLinkButtonProps) {
   return (
-    <Fab color="primary" variant="extended" size="medium" className={styles.fab} component="a" href={link}
+    <Fab
+      color="primary"
+      variant="extended"
+      size="medium"
+      className={styles.fab}
+      component="a"
+      href={link}
       target="_blank"
-      rel="noopener noreferrer">
+      rel="noopener noreferrer"
+    >
       <Icon size="28px" style={{ marginRight: "4px" }} />
       {label}
     </Fab>

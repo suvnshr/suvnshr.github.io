@@ -1,10 +1,6 @@
 import React from "react";
 
-import {
-  Paper,
-  ListItem,
-  ListItemText,
-} from "@mui/material";
+import { Paper, ListItem, ListItemText } from "@mui/material";
 
 import SkillChip from "./SkillChip";
 import styles from "./DomainListItem.module.scss";
@@ -23,7 +19,6 @@ import type { DomainListItemProps } from "./types";
  * @returns A styled list item containing domain details.
  */
 export default function DomainListItem({ name, skills }: DomainListItemProps) {
-
   return (
     <Paper variant="outlined" className={styles.paper}>
       <ListItem>

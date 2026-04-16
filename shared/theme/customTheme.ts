@@ -19,4 +19,3 @@ let customTheme = createTheme({
 customTheme = responsiveFontSizes(customTheme);
 
 export default customTheme as Theme;
-
