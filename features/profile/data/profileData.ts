@@ -2,12 +2,12 @@ import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
 import { IconType } from "react-icons";
 
 import type { ProfileData } from "../types";
+import { getProfileAbout } from "../utils/getProfileAbout";
 
 const profileData: ProfileData = {
   name: "Suvansh Rana",
   avatar: "./avatar-v3.jpg",
-  about:
-    "Full-stack software engineer with 4.5+ years of experience working with the MERN stack, focused on clean code, performance, and real-world products.",
+  about: getProfileAbout(),
 
   meta: {
     title: "Suvansh Rana's portfolio",
